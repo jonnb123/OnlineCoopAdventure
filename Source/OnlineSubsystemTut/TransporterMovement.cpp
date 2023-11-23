@@ -1,27 +1,27 @@
-#include "Transporter.h"
+// Fill out your copyright notice in the Description page of Project Settings.
+
+
+#include "TransporterMovement.h"
 
 #include "PressurePlate.h"
 
 
 // Sets default values for this component's properties
-UTransporter::UTransporter()
+UTransporterMovement::UTransporterMovement()
 {
+
 	// PrimaryComponentTick.bCanEverTick = true;
 
 	// this is the best way of turning on replication for an actor component in the constructor
 	SetIsReplicatedByDefault(true);
-
-	MoveTime = 3.f;
+	
 	ActivatedTriggerCount = 0;
-
-	ArePointsSet = false;
-	StartPoint = FVector::Zero();
-	EndPoint = FVector::Zero();
+	
 }
 
 
 // Called when the game starts
-void UTransporter::BeginPlay()
+void UTransporterMovement::BeginPlay()
 {
 	Super::BeginPlay();
 
@@ -29,13 +29,13 @@ void UTransporter::BeginPlay()
 	{
 		if (APressurePlate* PressurePlateActor = Cast<APressurePlate>(TA))
 		{
-			PressurePlateActor->OnActivated.AddDynamic(this, &UTransporter::OnPressurePlateActivated);
-			PressurePlateActor->OnDeactivated.AddDynamic(this, &UTransporter::OnPressurePlateDeactivated);
+			PressurePlateActor->OnActivated.AddDynamic(this, &UTransporterMovement::OnPressurePlateActivated);
+			PressurePlateActor->OnDeactivated.AddDynamic(this, &UTransporterMovement::OnPressurePlateDeactivated);
 		}
 	}
 }
 
-void UTransporter::OnPressurePlateActivated()
+void UTransporterMovement::OnPressurePlateActivated()
 {
 	ActivatedTriggerCount++;
 
@@ -48,12 +48,23 @@ void UTransporter::OnPressurePlateActivated()
 		if (AllTriggerActorsTriggered)
 		{
 			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, FString("AllTriggerActorsTriggered!"));
+
+			Activate();
+			// AActor* MyOwner = GetOwner();
+			// if (MyOwner && MyOwner->HasAuthority())
+			// {
+			// 	// Check if the actor has a UInterpToMovementComponent
+			// 	if (UInterpToMovementComponent* InterpToMovementComponent = MyOwner->FindComponentByClass<UInterpToMovementComponent>())
+			// 	{
+			// 		// Activate the InterpToMovementComponent
+			// 		InterpToMovementComponent->Activate();
+			// 	}
+			// }
 		}
 	}
-	
 }
 
-void UTransporter::OnPressurePlateDeactivated()
+void UTransporterMovement::OnPressurePlateDeactivated()
 {
 	ActivatedTriggerCount--;
 
@@ -61,16 +72,6 @@ void UTransporter::OnPressurePlateDeactivated()
 	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, Msg);
 }
 
-
-
-void UTransporter::SetPoints(FVector Point1, FVector Point2)
-{
-	if (Point1.Equals(Point2)) return;
-	
-	StartPoint = Point1;
-	EndPoint = Point2;
-	ArePointsSet = true;
-}
 
 
 
