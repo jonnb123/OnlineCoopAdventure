@@ -30,9 +30,7 @@ public:
 
 	UPROPERTY(BlueprintReadWrite, VisibleAnywhere)
 	bool AllTriggerActorsTriggered;
-
 	
-
 	UFUNCTION()
 	void OnPressurePlateActivated();
 

@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "TransporterMovement.h"
 #include "GameFramework/Actor.h"
 #include "PressurePlate.generated.h"
 
@@ -62,4 +63,7 @@ public:
 	
 	UPROPERTY(BlueprintAssignable)
 	FPressurePlateOnDeactivated OnDeactivated;
+
+	UPROPERTY(BlueprintReadWrite, VisibleAnywhere)
+	UTransporterMovement* Transporter;
 };

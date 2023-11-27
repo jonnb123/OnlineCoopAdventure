@@ -25,7 +25,7 @@ UTransporterMovement::UTransporterMovement()
 void UTransporterMovement::BeginPlay()
 {
 	Super::BeginPlay();
-
+	
 	for (AActor* TA : TriggerActors)
 	{
 		if (APressurePlate* PressurePlateActor = Cast<APressurePlate>(TA))

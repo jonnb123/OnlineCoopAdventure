@@ -16,10 +16,7 @@ AMovableActor::AMovableActor()
 	Mesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Mesh"));
 	Mesh->SetupAttachment(RootComp);
 	Mesh->SetIsReplicated(true);
-
 	
-
-	Transporter = CreateDefaultSubobject<UTransporterMovement>(TEXT("Transporter"));
 }
 
 // Called when the game starts or when spawned

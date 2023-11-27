@@ -25,8 +25,4 @@ public:
 
 	UPROPERTY(BlueprintReadWrite, VisibleAnywhere)
 	UStaticMeshComponent* Mesh;
-
-	UPROPERTY(BlueprintReadWrite, VisibleAnywhere)
-	UTransporterMovement*  Transporter;
-	
 };
