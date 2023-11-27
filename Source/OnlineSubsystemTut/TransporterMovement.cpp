@@ -17,6 +17,7 @@ UTransporterMovement::UTransporterMovement()
 	
 	ActivatedTriggerCount = 0;
 	
+	
 }
 
 
@@ -48,18 +49,14 @@ void UTransporterMovement::OnPressurePlateActivated()
 		if (AllTriggerActorsTriggered)
 		{
 			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, FString("AllTriggerActorsTriggered!"));
-
-			Activate();
-			// AActor* MyOwner = GetOwner();
-			// if (MyOwner && MyOwner->HasAuthority())
-			// {
-			// 	// Check if the actor has a UInterpToMovementComponent
-			// 	if (UInterpToMovementComponent* InterpToMovementComponent = MyOwner->FindComponentByClass<UInterpToMovementComponent>())
-			// 	{
-			// 		// Activate the InterpToMovementComponent
-			// 		InterpToMovementComponent->Activate();
-			// 	}
-			// }
+			
+			if (const AActor* MyOwner = GetOwner())
+			{
+				if (USceneComponent* RootComponent = MyOwner->GetRootComponent())
+				{
+					RootComponent->SetMobility(EComponentMobility::Movable);
+				}
+			}
 		}
 	}
 }
@@ -70,7 +67,22 @@ void UTransporterMovement::OnPressurePlateDeactivated()
 
 	FString Msg = FString::Printf(TEXT("Transporter Activated: %d"), ActivatedTriggerCount);
 	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, Msg);
+
+	AllTriggerActorsTriggered = (ActivatedTriggerCount >= TriggerActors.Num());
+	if (!AllTriggerActorsTriggered)
+	{
+		if (const AActor* MyOwner = GetOwner())
+		{
+			if (USceneComponent* RootComponent = MyOwner->GetRootComponent())
+			{
+				RootComponent->SetMobility(EComponentMobility::Static);
+			}
+		}
+	}
+	
 }
+
+
 
 
 
