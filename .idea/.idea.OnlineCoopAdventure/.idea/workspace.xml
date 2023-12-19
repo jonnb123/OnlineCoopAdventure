@@ -7,16 +7,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f51c1711-837d-49cf-bcdc-a2e27ea22015" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OnlineCoopAdventure/.idea/.gitignore" beforeDir="false" />
+    <list default="true" id="eae60c5b-af3e-4424-9b66-5b3981aa312a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.OnlineCoopAdventure/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OnlineCoopAdventure/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Asian_Village/maps/Asian_Village_Demo.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Asian_Village/maps/Asian_Village_Demo.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayElements/BP_PressurePlate.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayElements/BP_PressurePlate.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/OnlineSubsystemTut/MovableActor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/OnlineSubsystemTut/MovableActor.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/OnlineSubsystemTut/MovableActor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/OnlineSubsystemTut/MovableActor.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/OnlineSubsystemTut/PressurePlate.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/OnlineSubsystemTut/PressurePlate.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/OnlineSubsystemTut/PressurePlate.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/OnlineSubsystemTut/PressurePlate.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/OnlineSubsystemTut/TransporterMovement.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/OnlineSubsystemTut/TransporterMovement.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/OnlineSubsystemTut/TransporterMovement.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/OnlineSubsystemTut/TransporterMovement.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Asian_Village/materials/building_materials/MI_building_wood_01_Inst.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Asian_Village/materials/building_materials/MI_building_wood_01_Inst.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Asian_Village/materials/building_materials/M_building_wood.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Asian_Village/materials/building_materials/M_building_wood.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Asian_Village/materials/building_materials/base_materials/MI_brick_01_Inst.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Asian_Village/materials/building_materials/base_materials/MI_brick_01_Inst.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Asian_Village/materials/building_materials/base_materials/M_concrete.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Asian_Village/materials/building_materials/base_materials/M_concrete.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,10 +25,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
   "associatedIndex": 8
 }]]></component>
-  <component name="ProjectId" id="2YlBf1tu3NBeM6Rj94dMWK46Ahe" />
+  <component name="ProjectId" id="2ZlR29HhAAJ8ghBdVA9EhEVnLer" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -39,18 +36,19 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
     "rider.external.source.directories": [
-      "C:\\Users\\Jon10\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache",
-      "C:\\Users\\Jon10\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache",
+      "C:\\Users\\Jon10\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\Jon10\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
       "C:\\Users\\Jon10\\AppData\\Local\\Symbols\\src"
     ]
   }
@@ -121,12 +119,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f51c1711-837d-49cf-bcdc-a2e27ea22015" name="Changes" comment="" />
-      <created>1701090386131</created>
+      <changelist id="eae60c5b-af3e-4424-9b66-5b3981aa312a" name="Changes" comment="" />
+      <created>1702994469434</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1701090386131</updated>
-      <workItem from="1701090388084" duration="2263000" />
+      <updated>1702994469434</updated>
+      <workItem from="1702994470503" duration="5642000" />
     </task>
     <servers />
   </component>
